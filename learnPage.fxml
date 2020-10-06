@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="lang.view.learnPageController">
+   <top>
+      <Pane prefHeight="170.0" prefWidth="1200.0" style="-fx-background-color: #14A989;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="editWordsButton" layoutX="273.0" layoutY="105.0" mnemonicParsing="false" onAction="#inputDisplay"
+                    text="Add Words" >
+            <font>
+               <Font name = "Actor" size = "16.0" />
+            </font>
+            </Button>
+            <Button fx:id="learnBackButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#learnBackButtonClick"
+                    text="BACK"  >
+               <font>
+                  <Font name = "Actor" size = "16.0" />
+               </font>
+            </Button>
+            <Button fx:id="deleteWordsButton" layoutX="735.0" layoutY="105.0" mnemonicParsing="false" onAction="#deleteAlertBox"
+                    text="Delete Words" >
+               <font>
+                  <Font name = "Actor" size = "16.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <SplitPane prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" />
+         </items>
+      </SplitPane>
+   </center>
+</BorderPane>
+
+
+
+
+
+
